@@ -1,7 +1,15 @@
 package com.project.ourbookstore.repository;
 
 import com.project.ourbookstore.entity.Bookstore;
-import org.springframework.data.jpa.repository.JpaRepository;
+import com.project.ourbookstore.service.CreateBookstore;
 
-public interface BookstoreRepository extends JpaRepository<Bookstore, Long> {
+public interface BookstoreRepository {
+    void saveBookstore(Bookstore bookstore);
+
+    class Fake implements BookstoreRepository {
+        @Override
+        public void saveBookstore(Bookstore bookstore) {
+
+        }
+    }
 }
