@@ -12,8 +12,10 @@ public class BookstoreTag {
     private Long bookstoreTagId;
 
     @ManyToOne
+    @JoinColumn(name = "bookstore_id")
     private Bookstore bookstore;
 
     @ManyToOne
+    @JoinColumn(name = "tag_id")
     private Tag tag;
 }
