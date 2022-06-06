@@ -2,12 +2,14 @@ package com.project.ourbookstore.service;
 
 import lombok.Builder;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 @FunctionalInterface
 public interface CreateBookstore {
     void createBookstore(DtoForCreateBookstore dtoForCreateBookstore);
 
     @Getter
+    @NoArgsConstructor
     class DtoForCreateBookstore {
         private String name;
         private String address;
