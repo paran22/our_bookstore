@@ -20,14 +20,14 @@ public class Bookstore extends Timestamped {
     private String name;
     @Column(nullable = false)
     private String address;
-    @Column(nullable = true)
+    @Column(nullable = false)
     private String phoneNumber;
-    @Column(nullable = true)
+    @Column(nullable = false)
     private String homepageUrl;
-    @Column(nullable = true)
+    @Column(nullable = false)
     private String snsUrl;
 
-    @Column(nullable = true)
+    @Column(nullable = false)
     private String description;
 
     @Builder
