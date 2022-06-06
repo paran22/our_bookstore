@@ -10,7 +10,7 @@ import javax.persistence.*;
 @Getter
 @Entity
 @NoArgsConstructor
-public class Bookstore {
+public class Bookstore extends Timestamped {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

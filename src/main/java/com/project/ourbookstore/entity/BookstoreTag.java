@@ -6,7 +6,7 @@ import javax.persistence.*;
 
 @Getter
 @Entity
-public class BookstoreTag {
+public class BookstoreTag extends Timestamped {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long bookstoreTagId;
